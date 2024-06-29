@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body {
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  background-color: #222;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav h2 {
+  margin-left: 30px;
+  font-weight: 700;
+
+  color: white;
+}
+nav ul {
+  width: 524px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  /* gap: 30px; */
+}
+nav ul span {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 95px;
+  height: 90%;
+  background: linear-gradient(45deg, #4f191965, #ff3325);
+  border-radius: 8px;
+  z-index: 0;
+  transition: left 0.3s ease;
+}
+nav ul li {
+  list-style: none;
+  z-index: 3;
+}
+nav ul li a {
+  padding:  23px;
+  font-size: 1em;
+  list-style: none;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  z-index: 3;
+}
+li:nth-child(1):hover ~ span {
+  left: 0;
+}
+li:nth-child(2):hover ~ span {
+  left: 95px; /* Adjust according to your needs */
+}
+li:nth-child(3):hover ~ span {
+  left: 192px; /* Adjust according to your needs */
+  width: 110px;
+}
+li:nth-child(4):hover ~ span {
+  left: 304px; /* Adjust according to your needs */
+  width: 110px;
+
+}
+li:nth-child(5):hover ~ span {
+  left: 414px; /* Adjust according to your needs */
+  width: 90px;
+
+}
